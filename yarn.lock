@@ -851,6 +851,18 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.4.tgz#a87b4b04e5ae14a88d48ebef15015f6b7d1f5677"
   integrity sha512-kBa+cDHOR9jpRJ+kcGMsysrls0leukrm68DmFQoMIWQcXdr2cZvyvypWuGYT7U+9kAExUE7+T7r6G3C3A6L8MQ==
 
+"@geolonia/mbgl-fork-me-control@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@geolonia/mbgl-fork-me-control/-/mbgl-fork-me-control-0.2.7.tgz#e249b9b41aa2e7b9a7bf27395a6ad1ff64271e98"
+  integrity sha512-OLTETX8+7mZpelGg75ope/lULnRMJB6VLB5aejv1mqQzDLPd3AJsfd/t+HZhOuqq8uP6dRI55Aki27pIyzBblw==
+
+"@geolonia/mbgl-geolonia-control@^0.3.8":
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/@geolonia/mbgl-geolonia-control/-/mbgl-geolonia-control-0.3.8.tgz#09c21c47b9c672c54caa4eff6301e73e70bd13d2"
+  integrity sha512-GOJI4MXuo1Q2Sc7fyMxnB4RPoA7CvPiAIZSfEFWl4pxJmDa//kP0b+6+dilgt7FXocqiVzsdQfLxLbsx8iySbg==
+  dependencies:
+    "@geolonia/mbgl-fork-me-control" "^0.2.7"
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"

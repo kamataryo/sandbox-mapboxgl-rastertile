@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+// @ts-ignore
+import GeoloniaControl from "@geolonia/mbgl-geolonia-control";
 
 export const Map: React.FC = () => {
   const [map, setMap] = useState<mapboxgl.Map | null>(null);
@@ -14,11 +16,13 @@ export const Map: React.FC = () => {
         container,
         zoom: 3,
         center: [135, 35],
+        hash: true,
         style:
           "https://api.geolonia.com/v1/styles/tilecloud-basic?key=YOUR-API-KEY"
       });
 
       map.addControl(new mapboxgl.NavigationControl());
+      map.addControl(new GeoloniaControl());
       map.on("load", () => {
         map.addLayer({
           id: "mapwarper",
